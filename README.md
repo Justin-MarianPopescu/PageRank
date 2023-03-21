@@ -91,4 +91,24 @@ The number of incoming links can be assigned a high degree of membership, the qu
 2. ***Fuzzy logic can be applied to equations*** by assigning degrees of membership to the input variables based on their respective values. ***Each membership*** function can be represented as a fuzzy set with a corresponding membership ***value between 0 and 1***. 
 3. ***Determine the degree of membership of each input value*** to each fuzzy set, and use these membership values to calculate the output y. We can then use these membership values to calculate the corresponding output y using the fuzzy rule-based system given.
 
-### Tests & Results
+### Tests & Reference
+<p align = "center">
+<img src="/images/graph1_out.png " alt="Alt text" title="Optional title" width="400px" height="400px">
+</p>
+<p align = "center">
+<img src="/images/graph2_out.png " alt="Alt text" title="Optional title" width="400px" height="400px">
+</p>
+### Results obtained output files
+<p align = "center">
+<img src="/images/graph1_res.png " alt="Alt text" title="Optional title" width="400px" height="400px">
+</p>
+<p align = "center">
+<img src="/images/graph2_res.png " alt="Alt text" title="Optional title" width="400px" height="400px">
+</p>
+### Results obtained console
+<p align = "center">
+<img src="/images/console1.png " alt="Alt text" title="Optional title" width="400px" height="400px">
+</p>
+<p align = "center">
+<img src="/images/console2.png " alt="Alt text" title="Optional title" width="400px" height="400px">
+</p>
