@@ -69,3 +69,26 @@ $$ T = Q · R \newline T =  [t_1, t_2,  \cdots  t_n],  \space T^{-1}  =  [x_1, x
 
 Based on the Q and R matrices, the function will then solve the n systems of equations.
 Overall, the Algebraic function will calculate the PageRank vector using the hyperlinks matrix and the damping factor, and use the Gram-Schmidt algorithm to compute the inverse of the matrix.
+
+### ***Task 3: Fuzzy Logic***
+
+***Fuzzy logic*** is an approach that deals with uncertainty and imprecision in decision-making processes. In the context of PageRank algorithm, fuzzy logic is used to calculate the degree of belonging of a web page to the set of important pages.
+
+*Fuzzy logic can calculate the output y for the equation based on uncertain or imprecise input values, improving the accuracy and flexibility of the calculation process.*
+
+The degree of importance of a web page can be determined based on 2 factors in our case:
+
+ 1. number of incoming links
+ 2. the quality of those links
+
+ However, these factors are not always precise and can have varying degrees of importance. 
+
+Fuzzy logic allows us to model this uncertainty by assigning degrees of membership to each factor based on their relevance.
+
+The number of incoming links can be assigned a high degree of membership, the quality of links and the relevance of the content can be assigned different degrees of membership based on their respective importance:
+
+1. ***Combine these degrees of membership*** to calculate a final degree of belonging for each web page. This degree of belonging can then be used to rank the web pages based on their importance and relevance. 
+2. ***Fuzzy logic can be applied to equations*** by assigning degrees of membership to the input variables based on their respective values. ***Each membership*** function can be represented as a fuzzy set with a corresponding membership ***value between 0 and 1***. 
+3. ***Determine the degree of membership of each input value*** to each fuzzy set, and use these membership values to calculate the output y. We can then use these membership values to calculate the corresponding output y using the fuzzy rule-based system given.
+
+### Tests & Results
