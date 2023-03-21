@@ -92,13 +92,13 @@ The number of incoming links can be assigned a high degree of membership, the qu
 3. ***Determine the degree of membership of each input value*** to each fuzzy set, and use these membership values to calculate the output y. We can then use these membership values to calculate the corresponding output y using the fuzzy rule-based system given.
 
 ### Tests & Reference
-<p display="inline-block" algin="center">
-<img src="/images/graph1_out.png " alt="Alt text" title="Optional title" width="400px" height="400px">
-<img src="/images/graph2_out.png " alt="Alt text" title="Optional title" width="400px" height="400px">
+<p algin="center">
+<img src="/images/graph1_out.png " alt="Alt text" title="Optional title" width="450px" height="450px">
+<img src="/images/graph2_out.png " alt="Alt text" title="Optional title" width="450px" height="450px">
 </p>
 
 ### Results obtained console, for output files [here](https://github.com/Justin-MarianPopescu/PageRank/tree/main/results)
-<p display="inline-block" algin="center">
-<img src="/images/console1.png " alt="Alt text" title="Optional title" width="400px" height="400px">
-<img src="/images/console2.png " alt="Alt text" title="Optional title" width="400px" height="400px">
+<p algin="center">
+<img src="/images/console1.png " alt="Alt text" title="Optional title" width="450px" height="450px">
+<img src="/images/console2.png " alt="Alt text" title="Optional title" width="450px" height="450px">
 </p>
