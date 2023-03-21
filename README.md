@@ -97,7 +97,7 @@ The number of incoming links can be assigned a high degree of membership, the qu
 <img src="/images/graph2_out.png " alt="Alt text" title="Optional title" width="400px" height="400px">
 </p>
 
-### Results obtained console, for output files [here](https://github.com/Justin-MarianPopescu/PageRank/tree/main/images)
+### Results obtained console, for output files [here](https://github.com/Justin-MarianPopescu/PageRank/tree/main/results)
 <p display="inline-block" algin="center">
 <img src="/images/console1.png " alt="Alt text" title="Optional title" width="400px" height="400px">
 <img src="/images/console2.png " alt="Alt text" title="Optional title" width="400px" height="400px">
