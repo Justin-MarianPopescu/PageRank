@@ -1,8 +1,8 @@
-# *Numeric Methods -- Homework I*
+# *Numeric Methods - Homework I*
 
 
 
-## **Page Rank Algorithm -- Google**
+## **Page Rank Algorithm - Google**
 
 ### ***General explanations about PageRank***
 
@@ -24,7 +24,7 @@ The importance of *M(A)* is to calculate the probability that a user will visit 
 
 The formula to calculate the PageRank index for $\forall A$ pages: 
 
-$$ \footnotesize PR(A) = \frac{1 - d}{N} + d \cdot \sum_{P \in M(A)} \frac{PR(P)}{L(P)} =
+$$ PR(A) = \frac{1 - d}{N} + d \cdot \sum_{P \in M(A)} \frac{PR(P)}{L(P)} =
 \frac{1 - d}{N} + d \cdot (\frac{PR(B)}{L(B)} + \frac{PR(C)}{L(C)} + \frac{PR(D)}{L(D)} + \cdots) $$
 
 This formula takes into account the importance of each page in set *M(A)*, as represented by their PageRank indices ****(PR(B), PR(C*\) , PR(D), etc...)*** and the number of incoming links each of these pages has ***(L(B), L(C*\), L(D), etc...)**. The higher the PageRank indices of the linking pages and the fewer the number of incoming links, the higher the PageRank index of page *A* is.
@@ -35,13 +35,14 @@ Program takes N web resources and creates a graph with an adjacency list, displa
 
 The algorithm takes: <ins>**the file name, d parameter - damping factor and eps - tolerance as input and output is PR vector - list of all pages ranked**</ins>. The adjacency matrix of this graph is denoted by *A*, which respects specific proprieties: 
 
- - $\footnotesize A(i,j) =0$ if node i is not adjacent with the node j, otherwise 1.
+ - $A(i,j) = 0$ if node i is not adjacent with the node j, otherwise 1.
  - A web page contains at least one link to another web page. This means that matrix resulted from iterative algorithm is invertible.
- - Some pages will have a link to themselves, for easier navigation, so not all elements from main diagonal of matrix *A* are 0. In analysis, these links are meaningless, so they will not be counted. $\footnotesize A(i,i) =0 \forall i \in [1,N]$ 
+ - Some pages will have a link to themselves, for easier navigation, so not all elements from main diagonal of matrix *A* are 0. In analysis, these links are meaningless, so they will not be counted. $A(i,i) = 0 \forall i \in [1,N]$ 
 
 After reading the file, the code builds the matrix of initial links for each page, calculates the R factor, and initializes the PageRank vector with a value of *1/number of pages for each page*.
 
 The function then enters a while loop, which calculates the PageRank vector for each page using the formula: 
+
 $$ PageRank = d \cdot L_0 \cdot PR_0 + ((1 - d) ./ N)  \cdot L $$ 
 
  - $L$ is the matrix of initial links for each page
@@ -61,7 +62,8 @@ In addition, the Gram-Schmidt algorithm will be used to compute the inverse of t
 To calculate the inverse of a matrix, the Gram-Schmidt algorithm will be used: let $T$ be an invertible matrix <u>(with n rows and n columns)</u> for which **$T ^{-1}$** is required to be determined.
 
 **The optimized Gram-Schmidt** algorithm will be used to find Q and R matrices such that:
-$$ T = Q · R \newline T =  [t_1, t_2,  \cdots  t_n],  \space T^{-1}  =  [x_1, x_2, \cdots  x_n]  \newline T · [x_1, x_2  \cdots  x_n] = [e_1, e_2  \cdots e_n], \space \space \space T ·  x_i =  e_i (*)$$
+
+$$ T = Q · R \newline T =  [t_1, t_2,  \cdots  t_n],  \space T^{-1}  =  [x_1, x_2, \cdots  x_n]  \newline T · [x_1, x_2  \cdots  x_n] = [e_1, e_2  \cdots e_n], \space \space \space T ·  x_i =  e_i $$
 
 Based on the Q and R matrices, the function will then solve the n systems of equations.
 Overall, the Algebraic function will calculate the PageRank vector using the hyperlinks matrix and the damping factor, and use the Gram-Schmidt algorithm to compute the inverse of the matrix.
