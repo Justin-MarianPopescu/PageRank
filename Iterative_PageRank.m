@@ -32,9 +32,9 @@ function [PageRank] = Iterative_PageRank(file, damp_fact, eps)
        no_links = fscanf(FILE, '%d', 1);
        Links(parent_page) = no_links;
        for link = 1 : no_links  
-           nod = fscanf(FILE, '%d', 1);
-           if nod ~= parent_page
-             HyperLinks(parent_page, nod) = 1;
+           hyperlink = fscanf(FILE, '%d', 1);
+           if hyperlink ~= parent_page
+             HyperLinks(parent_page, hyperlink) = 1;
            else
               Links(parent_page) = Links(parent_page) - 1; 
               % if there is already a link
@@ -54,7 +54,7 @@ function [PageRank] = Iterative_PageRank(file, damp_fact, eps)
         % and the more his PageRank increases even more
         % depending on the no. of links from j -> i
         if HyperLinks(j, i) == 1
-           Links_Initial(i, j) = 1. / Links_Initial(j);
+           Links_Initial(i, j) = 1. / Links(j);
         else
            Links_Initial(i, j) = 0;
         end
