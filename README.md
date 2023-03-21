@@ -1,6 +1,6 @@
 # *Numeric Methods - Homework I*
 
-<img src="/images/Rank.png " alt="Alt text" title="Optional title">
+<img src="/images/Rank.png " alt="Alt text" title="Optional title" width="1080px">
 
 ## **Page Rank Algorithm - Google**
 
