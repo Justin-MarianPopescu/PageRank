@@ -1,10 +1,10 @@
 # *Numeric Methods - Homework I*
 
 <p align = "center">
-<img src="/images/Rank.png " alt="Alt text" title="Optional title" width="600px" height="500px">
+<img src="/images/Rank.png " alt="Alt text" title="Optional title" width="600px" height="350px">
 </p>
 
-## **Page Rank Algorithm - Google**
+## **[Page Rank Algorithm - Google](https://en.wikipedia.org/wiki/PageRank)**
 
 ### ***General explanations about PageRank***
 
@@ -92,23 +92,13 @@ The number of incoming links can be assigned a high degree of membership, the qu
 3. ***Determine the degree of membership of each input value*** to each fuzzy set, and use these membership values to calculate the output y. We can then use these membership values to calculate the corresponding output y using the fuzzy rule-based system given.
 
 ### Tests & Reference
-<p align = "center">
+<p display="inline-block" algin="center">
 <img src="/images/graph1_out.png " alt="Alt text" title="Optional title" width="400px" height="400px">
-</p>
-<p align = "center">
 <img src="/images/graph2_out.png " alt="Alt text" title="Optional title" width="400px" height="400px">
 </p>
-### Results obtained output files
-<p align = "center">
-<img src="/images/graph1_res.png " alt="Alt text" title="Optional title" width="400px" height="400px">
-</p>
-<p align = "center">
-<img src="/images/graph2_res.png " alt="Alt text" title="Optional title" width="400px" height="400px">
-</p>
-### Results obtained console
-<p align = "center">
+
+### Results obtained console for output files here
+<p display="inline-block" algin="center">
 <img src="/images/console1.png " alt="Alt text" title="Optional title" width="400px" height="400px">
-</p>
-<p align = "center">
 <img src="/images/console2.png " alt="Alt text" title="Optional title" width="400px" height="400px">
 </p>
